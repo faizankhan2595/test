@@ -1,0 +1,5 @@
+# Redirect traffic to your port 3001
+DirectoryIndex
+RewriteEngine On
+RewriteBase /
+RewriteRule ^(.*)?$ http://127.0.0.1:3002/$1 [P,L]
